@@ -8,8 +8,6 @@ done < example_people_data.tsv | head -10
 
 unset IFS
 IFS=$'\t'
-\n
-\n
 
 #Go through the file showing an index counter, name, city and the country, but
 #without the header and blanks lines this time
@@ -20,7 +18,6 @@ count=$((count+1))
 echo -e "$count\t$name\t$city\t$country"
 done < example_people_data.tsv | head -10 | tail -10
 
-#Put people into separate files, a different file for each country
 
 #Work out how many people were born in October, and where are they from, output #the list of people
 
